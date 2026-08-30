@@ -1,0 +1,25 @@
+AM-001 Analytical Assay Method v2.0
+Fictional controlled-use document | Prepared for GeneFlow demonstration
+Document control
+Method ID: AM-001
+Version: 2.0
+Effective date: 15 July 2026
+Status: Current method
+1. Purpose
+Quantitative analysis of the GT-101 biomarker in study samples.
+2. Sample preparation
+Sample input volume: 20 µL.
+Dilution: 1:5.
+Incubation: 30 minutes at controlled temperature.
+3. Detection
+Signal is measured using the laboratory detection platform. Results are reported in assay-defined units.
+4. Acceptance criteria
+Run acceptance requires control recovery within the updated validated range and replicate precision within the
+updated method specification.
+5. Change history
+Version 2.0 — sample input increased from 10 µL to 20 µL and acceptance criteria updated following an assay
+robustness assessment.
+6. Implementation note
+Historical results generated using AM-001 version 1.0 are not automatically reclassified. Scientific assessment
+is required to determine comparability where results generated using different method versions are used
+together.

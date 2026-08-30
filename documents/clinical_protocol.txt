@@ -1,0 +1,20 @@
+Document: Clinical Protocol
+ID: CP-2024-001
+Version: 1.0
+Date: 2024-01-15
+Author: Dr. A. Carter
+
+Section: Study Overview
+Content: Phase I/II open-label dose-escalation study of rAAV-hFIX gene therapy in adults with severe Haemophilia B.
+Sample Size: n=40 participants enrolled across four dose cohorts.
+
+Section: Vector Description
+Content: The investigational product is rAAV-hFIX (single-stranded recombinant AAV) encoding codon-optimised human Factor IX.
+Assay Reference: Potency measured using AM-001 v1 (deprecated analytical method).
+
+Section: Dose Escalation
+Content: Starting dose for Cohort 1 is 1.5e12 vg/kg, escalating to 3.0e12 vg/kg in Cohort 2.
+Safety Reference: Preclinical NOAEL established in NHP toxicology study (see preclinical_toxicology.txt).
+
+Section: SOP References
+Content: Sample handling per SOP-302 v2. Data management per SOP-101 v4.

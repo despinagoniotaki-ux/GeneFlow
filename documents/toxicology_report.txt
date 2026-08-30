@@ -1,0 +1,11 @@
+Document: Toxicology Summary Report
+ID: TOX-SUM-001
+Version: 1.0
+Date: 2023-12-01
+Author: Regulatory Affairs
+
+Section: NOAEL Summary
+Content: Based on preclinical NHP data, the NOAEL for rAAV-hFIX is confirmed at 5.0e12 vg/kg.
+
+Section: Risk Assessment
+Content: Doses below 5.0e12 vg/kg are considered within the established safety margin.

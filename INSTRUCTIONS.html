@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GeneFlow MVP — Instructions</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,"Segoe UI",system-ui,sans-serif;background:#ffffff;color:#1f2328;font-size:14px;line-height:1.6}
+.page{max-width:760px;margin:0 auto;padding:48px 24px 64px}
+
+/* Header */
+.header{display:flex;align-items:center;gap:16px;margin-bottom:8px}
+.logo{width:44px;height:44px;flex-shrink:0}
+h1{font-size:1.6rem;font-weight:700}
+.tagline{color:#57606a;font-size:.9rem;margin-bottom:36px;padding-left:60px}
+
+/* Section headings */
+h2{font-size:1rem;font-weight:700;margin:36px 0 12px;color:#1f2328;
+   border-bottom:1px solid #e5e7eb;padding-bottom:6px;display:flex;align-items:center;gap:8px}
+h2 .ico{font-size:1rem}
+h3{font-size:.88rem;font-weight:700;margin:18px 0 6px;color:#1f2328}
+
+/* Prose */
+p{margin-bottom:10px;color:#1f2328}
+ul,ol{padding-left:20px;margin-bottom:10px}
+li{margin-bottom:4px}
+a{color:#3b82d4;text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* Code / command */
+code{font-family:"SF Mono","Fira Code","Cascadia Code",monospace;font-size:.82rem;
+     background:#f7f8fa;border:1px solid #e5e7eb;border-radius:3px;padding:1px 5px;color:#1f2328}
+pre{background:#f7f8fa;border:1px solid #e5e7eb;border-radius:6px;padding:14px 16px;
+    font-family:"SF Mono","Fira Code","Cascadia Code",monospace;font-size:.8rem;
+    line-height:1.75;overflow-x:auto;margin-bottom:12px;color:#1f2328}
+pre .comment{color:#6e7781}
+pre .cmd{color:#0550ae}
+pre .path{color:#6639ba}
+
+/* Callout boxes */
+.callout{border-radius:6px;padding:12px 16px;margin-bottom:14px;font-size:.85rem;line-height:1.6}
+.callout-tip{background:#f0fdf4;border:1px solid #bbf7d0;color:#166534}
+.callout-warn{background:#fffbeb;border:1px solid #fde68a;color:#92400e}
+.callout-danger{background:#fef2f2;border:1px solid #fecaca;color:#991b1b}
+.callout strong{display:block;margin-bottom:3px;font-size:.82rem;text-transform:uppercase;letter-spacing:.4px}
+
+/* Badges */
+.badge{display:inline-block;padding:2px 8px;border-radius:10px;font-size:.71rem;font-weight:700;letter-spacing:.3px;vertical-align:middle}
+.CRITICAL{background:#fee2e2;color:#991b1b}
+.HIGH{background:#fef3c7;color:#92400e}
+.MEDIUM{background:#dbeafe;color:#1e40af}
+.LOW{background:#f0fdf4;color:#166534}
+
+/* Step list */
+.steps{counter-reset:step;list-style:none;padding:0}
+.steps li{counter-increment:step;display:flex;gap:14px;margin-bottom:16px;align-items:flex-start}
+.steps li::before{content:counter(step);background:#3b82d4;color:#fff;width:24px;height:24px;
+  border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font-size:.75rem;font-weight:700;flex-shrink:0;margin-top:1px}
+.steps li div{flex:1}
+
+/* File tree */
+.file-tree{font-family:"SF Mono","Fira Code",monospace;font-size:.79rem;
+  background:#f7f8fa;border:1px solid #e5e7eb;border-radius:6px;padding:16px 18px;
+  line-height:1.95;color:#1f2328}
+.ft-dir{color:#3b5acb;font-weight:600}
+.ft-note{color:#57606a}
+
+/* Table */
+table{width:100%;border-collapse:collapse;margin-bottom:14px;font-size:.83rem}
+th{text-align:left;padding:8px 10px;font-size:.73rem;text-transform:uppercase;
+   color:#57606a;border-bottom:2px solid #e5e7eb;background:#f7f8fa}
+td{padding:8px 10px;border-bottom:1px solid #f0f1f3;vertical-align:top}
+tr:last-child td{border-bottom:none}
+
+/* Screen descriptions */
+.screen-card{background:#f7f8fa;border:1px solid #e5e7eb;border-radius:8px;
+  padding:16px 18px;margin-bottom:12px}
+.screen-card h3{margin-top:0;color:#3b5acb}
+
+/* Footer */
+footer{margin-top:56px;padding-top:14px;border-top:1px solid #e5e7eb;
+  text-align:center;font-size:.73rem;color:#57606a}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- ── Header ───────────────────────────────────────────────── -->
+  <div class="header">
+    <svg class="logo" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="22" cy="22" r="21" stroke="#3b82d4" stroke-width="2"/>
+      <path d="M12 22 Q16 13 22 22 Q28 31 32 22" stroke="#7c5cd8" stroke-width="2.2"
+            fill="none" stroke-linecap="round"/>
+      <circle cx="12" cy="22" r="2.5" fill="#3b82d4"/>
+      <circle cx="32" cy="22" r="2.5" fill="#7c5cd8"/>
+      <circle cx="22" cy="22" r="2"   fill="#1f2328"/>
+    </svg>
+    <h1>GeneFlow MVP</h1>
+  </div>
+  <p class="tagline">Gene-Therapy Compliance &middot; Change-Impact &middot; Evidence-Traceability Platform</p>
+
+  <!-- ── Prerequisites ────────────────────────────────────────── -->
+  <h2><span class="ico">&#9881;&#65039;</span> Prerequisites</h2>
+  <p>GeneFlow requires <strong>Python 3.9 or later</strong>. Confirm your version before proceeding:</p>
+  <pre>python3 --version</pre>
+  <p>Install the two required packages (Flask for the web UI, pytest for the test suite):</p>
+  <pre>pip install flask pytest</pre>
+  <div class="callout callout-tip">
+    <strong>&#128161; Tip &mdash; virtual environment</strong>
+    Using a virtual environment keeps your global Python install clean:
+    <code>python3 -m venv .venv &amp;&amp; source .venv/bin/activate</code>, then run the
+    <code>pip install</code> above inside it.
+  </div>
+
+  <!-- ── Quick start ───────────────────────────────────────────── -->
+  <h2><span class="ico">&#128640;</span> Quick Start (two commands)</h2>
+  <ol class="steps">
+    <li>
+      <div>
+        <strong>Navigate to the project folder</strong>
+        <pre>cd ~/Downloads/GeneFlow_MVP</pre>
+      </div>
+    </li>
+    <li>
+      <div>
+        <strong>Start the web server</strong>
+        <pre>python3 app/frontend/server.py</pre>
+        You should see:
+        <pre><span class="comment">[GeneFlow] Documents folder : /Users/…/GeneFlow_MVP/documents
+[GeneFlow] Starting server  : http://127.0.0.1:5000</span></pre>
+      </div>
+    </li>
+    <li>
+      <div>
+        <strong>Open the dashboard</strong><br>
+        Go to <a href="http://127.0.0.1:5000">http://127.0.0.1:5000</a> in your browser,
+        then click <strong>&ldquo;&#9889; Run Demo (pre-loaded package)&rdquo;</strong> to run the full
+        compliance pipeline against all 10 pre-loaded mock documents.
+      </div>
+    </li>
+  </ol>
+
+  <!-- ── Dashboard screens ─────────────────────────────────────── -->
+  <h2><span class="ico">&#128421;&#65039;</span> Dashboard &mdash; Three Screens</h2>
+
+  <div class="screen-card">
+    <h3>&#128228; Package Upload</h3>
+    <p>Drop in your own <code>.txt</code> or <code>.pdf</code> compliance documents and click
+    <strong>&ldquo;&#9654; Run Compliance Analysis&rdquo;</strong>. The pipeline will ingest, extract claims,
+    detect version changes, resolve SOP dependencies, and return a live findings report.
+    Use <strong>&ldquo;&#9889; Run Demo&rdquo;</strong> to analyse the 10 pre-loaded mock documents instantly.</p>
+  </div>
+
+  <div class="screen-card">
+    <h3>&#128269; Findings Dashboard</h3>
+    <p>Shows headline statistics (total alerts, CRITICAL / HIGH / MEDIUM counts, documents loaded,
+    claims extracted) and an <strong>Executive Summary</strong>. Below, every alert is rendered as
+    a priority card sorted by severity, each displaying:</p>
+    <ul>
+      <li>Alert type and severity badge</li>
+      <li>Plain-English description of the discrepancy</li>
+      <li>Source document tags</li>
+      <li>A tailored <strong>Reconciliation Action</strong> prompt</li>
+      <li>Per-finding <em>Mark Resolved</em> and <em>Escalate</em> buttons</li>
+    </ul>
+  </div>
+
+  <div class="screen-card">
+    <h3>&#128300; Evidence Inspector</h3>
+    <p>Lists every atomic evidence claim extracted from the documents, showing the source document ID,
+    parameter type, value, and the raw verbatim quote from the source text. The
+    <strong>Human-in-the-Loop</strong> action bar lets you:</p>
+    <ul>
+      <li><strong>&#9989; Approve All Reconciliations</strong> &mdash; log bulk acknowledgement</li>
+      <li><strong>&#9888;&#65039; Escalate Critical to QA</strong> &mdash; flag for QA team follow-up</li>
+      <li><strong>&#128229; Export Report JSON</strong> &mdash; download the full impact report as a <code>.json</code> file</li>
+    </ul>
+  </div>
+
+  <!-- ── Running the tests ─────────────────────────────────────── -->
+  <h2><span class="ico">&#129514;</span> Running the Test Suite</h2>
+  <pre>cd ~/Downloads/GeneFlow_MVP
+pytest tests/ -v</pre>
+  <p>Expected output &mdash; all 9 tests should pass:</p>
+  <pre><span class="comment">tests/test_agents.py::test_document_ingestion            PASSED
+tests/test_agents.py::test_evidence_extraction           PASSED
+tests/test_agents.py::test_alert_sample_size_conflict    PASSED
+tests/test_agents.py::test_alert_assay_version_mismatch  PASSED
+tests/test_agents.py::test_alert_outdated_sop_dependency PASSED
+tests/test_agents.py::test_alert_dose_safety_violation   PASSED
+tests/test_agents.py::test_alert_noael_trace_mismatch    PASSED
+tests/test_agents.py::test_alert_vector_design_mismatch  PASSED
+tests/test_agents.py::test_impact_report_totals          PASSED
+
+9 passed in 0.11s</span></pre>
+
+  <!-- ── The 6 findings ─────────────────────────────────────────── -->
+  <h2><span class="ico">&#128270;</span> The 6 Planted Inconsistencies</h2>
+  <p>The pre-loaded mock document package contains six deliberately planted compliance errors
+  that the pipeline is designed to detect:</p>
+
+  <table>
+    <tr><th>#</th><th>Finding</th><th>Severity</th><th>Documents Involved</th></tr>
+    <tr>
+      <td>1</td>
+      <td><strong>Sample Size Conflict</strong><br>
+        <span style="color:#57606a">Protocol states n=40; Study Report records n=38</span></td>
+      <td><span class="badge HIGH">HIGH</span></td>
+      <td><code>clinical_protocol.txt</code><br><code>clinical_study_report.txt</code></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><strong>Assay Version Mismatch</strong><br>
+        <span style="color:#57606a">AM-001 v1 (retired) cited; v2 is the approved method</span></td>
+      <td><span class="badge HIGH">HIGH</span></td>
+      <td><code>sop_analytical_validation.txt</code><br><code>clinical_protocol.txt</code>, <code>clinical_study_report.txt</code>, <code>manufacturing_batch_record.txt</code></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><strong>Outdated SOP Dependency</strong><br>
+        <span style="color:#57606a">SOP-302 v2 (retired) referenced; v3 is active</span></td>
+      <td><span class="badge MEDIUM">MEDIUM</span></td>
+      <td><code>sop_registry.txt</code><br><code>clinical_protocol.txt</code>, <code>clinical_study_report.txt</code></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><strong>Dose Safety Violation</strong><br>
+        <span style="color:#57606a">MRSD = 1.5&times;10&sup1;&sup1; vg/kg; clinical starting dose = 1.5&times;10&sup1;&sup2; vg/kg (10&times; overage)</span></td>
+      <td><span class="badge CRITICAL">CRITICAL</span></td>
+      <td><code>preclinical_toxicology.txt</code><br><code>clinical_protocol.txt</code></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><strong>NOAEL Trace Mismatch</strong><br>
+        <span style="color:#57606a">Tox report NOAEL 5.0&times;10&sup1;&sup2; vg/kg; IND claims 5.0&times;10&sup1;&sup3; vg/kg (10&times; exaggeration)</span></td>
+      <td><span class="badge CRITICAL">CRITICAL</span></td>
+      <td><code>toxicology_report.txt</code><br><code>ind_application.txt</code></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td><strong>Vector Design Mismatch</strong><br>
+        <span style="color:#57606a">Preclinical used scAAV-hFIX; clinical lot manufactured as rAAV-hFIX</span></td>
+      <td><span class="badge CRITICAL">CRITICAL</span></td>
+      <td><code>preclinical_study.txt</code><br><code>manufacturing_batch_record.txt</code></td>
+    </tr>
+  </table>
+
+  <!-- ── Project structure ─────────────────────────────────────── -->
+  <h2><span class="ico">&#128193;</span> Project Structure</h2>
+  <div class="file-tree">
+<span class="ft-dir">GeneFlow_MVP/</span>
+&#9500;&#9472;&#9472; <span class="ft-dir">app/</span>
+&#9474;   &#9500;&#9472;&#9472; <span class="ft-dir">backend/</span>
+&#9474;   &#9474;   &#9500;&#9472;&#9472; ingest.py               <span class="ft-note"># Document ingestor (.txt and .pdf)</span>
+&#9474;   &#9474;   &#9492;&#9472;&#9472; pipeline.py             <span class="ft-note"># Multi-agent orchestrator</span>
+&#9474;   &#9500;&#9472;&#9472; <span class="ft-dir">agents/</span>
+&#9474;   &#9474;   &#9500;&#9472;&#9472; evidence_extractor.py   <span class="ft-note"># Atomic claim parser</span>
+&#9474;   &#9474;   &#9500;&#9472;&#9472; change_detector.py      <span class="ft-note"># Analytical method version auditor</span>
+&#9474;   &#9474;   &#9500;&#9472;&#9472; dependency_agent.py     <span class="ft-note"># SOP registry resolver</span>
+&#9474;   &#9474;   &#9500;&#9472;&#9472; consistency_agent.py    <span class="ft-note"># Cross-document consistency checker</span>
+&#9474;   &#9474;   &#9492;&#9472;&#9472; impact_report_agent.py  <span class="ft-note"># Executive report synthesiser</span>
+&#9474;   &#9492;&#9472;&#9472; <span class="ft-dir">frontend/</span>
+&#9474;       &#9492;&#9472;&#9472; server.py               <span class="ft-note"># Flask UI &mdash; binds to 127.0.0.1:5000</span>
+&#9500;&#9472;&#9472; <span class="ft-dir">documents/</span>                    <span class="ft-note"># 10 mock compliance documents</span>
+&#9500;&#9472;&#9472; <span class="ft-dir">schemas/</span>                      <span class="ft-note"># 5 JSON Schema definitions</span>
+&#9500;&#9472;&#9472; <span class="ft-dir">tests/</span>
+&#9474;   &#9492;&#9472;&#9472; test_agents.py              <span class="ft-note"># 9 pytest tests</span>
+&#9500;&#9472;&#9472; INSTRUCTIONS.html               <span class="ft-note"># This file</span>
+&#9500;&#9472;&#9472; requirements.txt
+&#9492;&#9472;&#9472; README.md</div>
+
+  <!-- ── Using your own documents ──────────────────────────────── -->
+  <h2><span class="ico">&#128196;</span> Using Your Own Documents</h2>
+  <h3>Plain-text format</h3>
+  <p>Documents should follow this structured header format for best extraction results:</p>
+  <pre>Document: &lt;title&gt;
+ID: &lt;unique-id&gt;
+Version: &lt;version&gt;
+Date: YYYY-MM-DD
+Author: &lt;name&gt;
+
+Section: &lt;section name&gt;
+Content: &lt;free text&hellip;&gt;
+
+Section: &lt;another section&gt;
+Content: &lt;free text&hellip;&gt;</pre>
+  <p>Any plain <code>.txt</code> file will still be ingested &mdash; unrecognised lines are treated as
+  section body text.</p>
+
+  <h3>PDF documents</h3>
+  <p>PDF support requires PyMuPDF. Install it with:</p>
+  <pre>pip install PyMuPDF</pre>
+  <div class="callout callout-tip">
+    <strong>&#128161; Uploading via the UI</strong>
+    Use the <strong>Package Upload</strong> screen to drag-and-drop any combination of
+    <code>.txt</code> and <code>.pdf</code> files. The pipeline runs automatically on upload.
+  </div>
+
+  <!-- ── Exporting results ─────────────────────────────────────── -->
+  <h2><span class="ico">&#128229;</span> Exporting Results</h2>
+  <p>From the <strong>Evidence Inspector</strong> screen, click
+  <strong>&ldquo;&#128229; Export Report JSON&rdquo;</strong> to download the full impact report. You can also
+  call the API directly:</p>
+  <pre>curl http://127.0.0.1:5000/report</pre>
+  <p>This returns the most recent pipeline result as a JSON object conforming to
+  <code>schemas/impact_report.json</code>.</p>
+
+  <!-- ── Security ──────────────────────────────────────────────── -->
+  <h2><span class="ico">&#128274;</span> Security</h2>
+  <div class="callout callout-warn">
+    <strong>&#9888;&#65039; Local use only</strong>
+    The Flask server binds exclusively to <code>127.0.0.1</code> (loopback). It is not
+    reachable from other machines on your network. Do not change the host to
+    <code>0.0.0.0</code> without adding authentication, as the upload endpoint accepts
+    arbitrary files.
+  </div>
+  <p>The maximum upload size is capped at <strong>32 MB</strong> per request.</p>
+
+  <!-- ── Troubleshooting ───────────────────────────────────────── -->
+  <h2><span class="ico">&#128295;</span> Troubleshooting</h2>
+  <table>
+    <tr><th>Symptom</th><th>Likely cause</th><th>Fix</th></tr>
+    <tr>
+      <td><code>ModuleNotFoundError: flask</code></td>
+      <td>Flask not installed in current environment</td>
+      <td>Run <code>pip install flask</code> (activate your venv first if using one)</td>
+    </tr>
+    <tr>
+      <td><code>Address already in use</code></td>
+      <td>Port 5000 is occupied</td>
+      <td>Kill the process: <code>lsof -ti:5000 | xargs kill</code></td>
+    </tr>
+    <tr>
+      <td>Demo returns 0 alerts</td>
+      <td><code>documents/</code> folder not found</td>
+      <td>Run the server from inside <code>GeneFlow_MVP/</code>, not a subdirectory</td>
+    </tr>
+    <tr>
+      <td>PDF shows no claims</td>
+      <td>PyMuPDF not installed</td>
+      <td><code>pip install PyMuPDF</code></td>
+    </tr>
+    <tr>
+      <td>Pytest import errors</td>
+      <td>Running pytest from wrong directory</td>
+      <td>Always run <code>pytest tests/ -v</code> from <code>GeneFlow_MVP/</code></td>
+    </tr>
+  </table>
+
+  <!-- ── Re-bootstrapping ──────────────────────────────────────── -->
+  <h2><span class="ico">&#9851;&#65039;</span> Re-bootstrapping</h2>
+  <p>To reset the project to a clean state (e.g. after editing mock documents), re-run the
+  bootstrap script from the workspace root:</p>
+  <pre>python3 bootstrap_geneflow.py</pre>
+  <div class="callout callout-danger">
+    <strong>&#9888;&#65039; Warning &mdash; this overwrites all files</strong>
+    Running the bootstrap script will overwrite every file in
+    <code>~/Downloads/GeneFlow_MVP/</code>, including any documents you have added.
+    Back up custom documents first.
+  </div>
+
+  <footer>Made with IBM Bob</footer>
+</div>
+</body>
+</html>

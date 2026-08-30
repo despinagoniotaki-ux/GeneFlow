@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "EvidenceClaim",
+  "type": "object",
+  "required": ["claim_id", "document_id", "section", "parameter", "value", "unit", "raw_quote"],
+  "properties": {
+    "claim_id":    {"type": "string"},
+    "document_id": {"type": "string"},
+    "section":     {"type": "string"},
+    "parameter":   {"type": "string"},
+    "value":       {"type": ["string", "number"]},
+    "unit":        {"type": "string"},
+    "raw_quote":   {"type": "string"}
+  }
+}

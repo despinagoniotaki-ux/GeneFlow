@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ChangeDiff",
+  "type": "object",
+  "required": ["diff_id", "method_id", "approved_version", "detected_version", "affected_documents"],
+  "properties": {
+    "diff_id":            {"type": "string"},
+    "method_id":          {"type": "string"},
+    "approved_version":   {"type": "string"},
+    "detected_version":   {"type": "string"},
+    "affected_documents": {"type": "array", "items": {"type": "string"}}
+  }
+}

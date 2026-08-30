@@ -1,0 +1,17 @@
+Document: Manufacturing Batch Record
+ID: MBR-2024-007
+Version: FINAL
+Date: 2024-05-12
+Author: Process Development
+
+Section: Product Identity
+Content: rAAV-hFIX (single-stranded recombinant AAV), Lot #GF-2024-007, manufactured per GMP conditions.
+
+Section: Release Testing
+Content: Identity confirmed by capsid ELISA and genome titre qPCR. Potency assay AM-001 v1 (deprecated) used for lot release.
+
+Section: Yield
+Content: Total yield: 2.4e14 vg in 12 mL formulation buffer. Endotoxin <0.5 EU/mL.
+
+Section: Vector Configuration
+Content: Product is single-stranded recombinant (rAAV), NOT self-complementary (scAAV). Vector design differs from preclinical studies.

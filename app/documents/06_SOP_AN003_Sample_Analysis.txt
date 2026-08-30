@@ -1,0 +1,19 @@
+SOP-AN-003 — Sample Analysis and Data Recording
+Fictional controlled-use document | Prepared for GeneFlow demonstration
+Document control
+SOP ID: SOP-AN-003
+Version: 1.2
+Effective date: 20 April 2026
+Owner: Bioanalytical Operations
+1. Purpose
+Define the standard process for preparation, analysis and recording of study samples.
+2. Applicable assay
+For GT-101 biomarker analysis, analysts shall use AM-001 version 1.0 unless an approved change control
+explicitly states otherwise.
+3. Sample input
+The standard sample input volume for AM-001 is 10 µL.
+4. Records
+Analysts shall record method ID, method version, sample ID, run ID and any deviations from the applicable
+method.
+5. Change control
+Changes to the analytical method require documented review and approval before implementation.

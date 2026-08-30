@@ -1,0 +1,20 @@
+GT-101 Development Team Meeting Notes
+Fictional controlled-use document | Prepared for GeneFlow demonstration
+Meeting information
+Meeting date: 05 August 2026
+Participants: Preclinical Development; Bioanalytical Sciences; Clinical Development; CMC/Technical
+Operations
+1. Assay transition
+The team discussed transition from AM-001 version 1.0 to version 2.0. The new method uses a 20 µL sample
+input.
+2. Historical samples
+The preclinical team noted that most historical samples were analysed using the previous method version.
+3. Clinical planning
+Clinical Development intends to use results generated with AM-001 version 2.0 for the future development
+programme.
+4. Documentation
+The team noted that some controlled documents may still reference AM-001 version 1.0. Owners were asked to
+review affected documents.
+5. Open item
+No final decision was made regarding analytical comparability between historical and current method versions.
+Scientific assessment remains required.

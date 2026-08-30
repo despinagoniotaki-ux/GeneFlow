@@ -1,0 +1,21 @@
+GT-101 Toxicology Study 022 — Final Report
+Fictional controlled-use document | Prepared for GeneFlow demonstration
+Document control
+Study ID: GT101-022
+Report version: 1.0
+Study completion: 10 June 2026
+1. Objective
+Evaluate tolerability, clinical pathology, histopathology and selected immunogenicity endpoints following
+administration of GT-101.
+2. Analytical methods
+Immunogenicity samples were analysed using AM-001. The study laboratory record identifies AM-001 version
+1.0 and a 10 µL sample input.
+3. Findings
+No unexpected clinical findings were identified at the proposed development dose. Histopathology findings were
+reviewed in the context of dose and control groups.
+4. Interpretation
+The immunogenicity results contribute to the overall preclinical evidence package. Analytical method version
+should be considered when comparing these data with future studies.
+5. Conclusion
+The findings support continued nonclinical development, subject to integrated review of the complete evidence
+package.

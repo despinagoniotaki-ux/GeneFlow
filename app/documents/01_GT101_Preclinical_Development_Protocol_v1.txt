@@ -1,0 +1,25 @@
+GT-101 Preclinical Development Protocol v1.0
+Fictional controlled-use document | Prepared for GeneFlow demonstration
+Document control
+Document ID: GT101-PROT-001
+Version: 1.0
+Status: Approved for preclinical execution
+Date: 12 March 2026
+Candidate: GT-101
+1. Objective
+Evaluate preliminary efficacy, biodistribution and tolerability of GT-101 in a relevant disease-model study.
+2. Study design
+Four dose groups will be evaluated. The planned total enrolment is 40 animals, with 10 animals per group.
+Primary analyses will use animals meeting the protocol-defined analysis criteria.
+3. Key endpoints
+Primary: target-gene expression and disease-relevant biomarker response.
+Secondary: biodistribution, clinical observations and selected immunogenicity measures.
+4. Analytical method
+Samples designated for biomarker analysis will be analysed using AM-001, version 1.0. The planned sample
+input volume is 10 µL.
+5. Sample schedule
+Samples will be collected at baseline and at predefined post-dose time points. Analytical results will be linked to
+animal ID, dose group and collection time.
+6. Data handling
+Any deviations from the planned sample size, analytical method or sampling schedule shall be documented and
+assessed before final interpretation.

@@ -1,0 +1,14 @@
+Document: Preclinical Efficacy Study
+ID: PRE-EFF-002
+Version: 1.0
+Date: 2023-04-20
+Author: Dr. C. Williams
+
+Section: Vector
+Content: scAAV-hFIX (self-complementary AAV serotype 8) expressing codon-optimised hFIX-Padua variant.
+
+Section: Efficacy Endpoints
+Content: FIX activity reached 85% of normal at week 12 post-administration at 1.0e12 vg/kg in NHPs.
+
+Section: Conclusion
+Content: scAAV-hFIX demonstrated durable Factor IX expression with acceptable safety profile. Supports FIH dose selection.

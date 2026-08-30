@@ -1,0 +1,14 @@
+Document: Regulatory Correspondence Log
+ID: REGC-2024-001
+Version: 1.1
+Date: 2024-08-20
+Author: Regulatory Affairs
+
+Section: FDA Pre-IND Meeting (2023-11-15)
+Content: FDA acknowledged receipt of pre-IND briefing package. Requested clarification on vector design equivalence between preclinical and clinical product (scAAV vs rAAV).
+
+Section: Sponsor Response
+Content: Sponsor committed to providing comparative manufacturing and characterisation data to justify vector equivalence prior to Phase I initiation.
+
+Section: Open Action Items
+Content: 1. Vector equivalence bridging study. 2. Updated NOAEL reconciliation. 3. SOP update confirmation for sample handling.

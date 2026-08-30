@@ -1,0 +1,11 @@
+Document: IND Application Module 4 – Nonclinical Overview
+ID: IND-2024-MOD4
+Version: 1.0
+Date: 2024-01-10
+Author: Regulatory Affairs
+
+Section: Nonclinical Safety Summary
+Content: The preclinical program establishes a NOAEL of 5.0e13 vg/kg in NHP repeat-dose studies, providing a robust safety margin for FIH dose selection.
+
+Section: FIH Dose Justification
+Content: The proposed starting dose of 1.5e12 vg/kg represents less than 1/30 of the claimed NOAEL, deemed acceptable by the sponsor.

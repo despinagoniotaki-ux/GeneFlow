@@ -1,0 +1,18 @@
+Document: Clinical Study Report
+ID: CSR-2024-001
+Version: FINAL
+Date: 2024-09-30
+Author: Clinical Operations Team
+
+Section: Study Population
+Content: A total of 38 participants were enrolled and treated across four dose cohorts.
+Sample Size: n=38 (two screen-failures excluded post-enrolment, protocol not updated).
+
+Section: Analytical Methods
+Content: Potency assays performed using AM-001 v1 (deprecated). Transition to AM-001 v2 not reflected in this report.
+
+Section: SOP Compliance
+Content: All sample processing conducted under SOP-302 v2 per protocol instruction.
+
+Section: Summary of Safety
+Content: No dose-limiting toxicities observed at starting dose of 1.5e12 vg/kg.

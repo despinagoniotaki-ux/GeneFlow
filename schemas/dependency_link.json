@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DependencyLink",
+  "type": "object",
+  "required": ["sop_id", "active_version", "retired_version", "referencing_documents"],
+  "properties": {
+    "sop_id":                  {"type": "string"},
+    "active_version":          {"type": "string"},
+    "retired_version":         {"type": "string"},
+    "referencing_documents":   {"type": "array", "items": {"type": "string"}}
+  }
+}

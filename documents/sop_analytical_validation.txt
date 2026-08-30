@@ -1,0 +1,14 @@
+Document: SOP – Analytical Validation
+ID: SOP-AV-010
+Version: 3.0
+Date: 2024-03-01
+Author: Analytical Sciences
+
+Section: Scope
+Content: This SOP governs the validated use of potency assay AM-001 v2 as the approved current method.
+
+Section: Supersession Notice
+Content: AM-001 v1 is formally retired as of 2024-03-01. Any document referencing AM-001 v1 must be updated to AM-001 v2.
+
+Section: Validation Parameters
+Content: AM-001 v2 demonstrated linearity (R2=0.998), precision (%CV<5%), and accuracy (95–105%) across the validated range.

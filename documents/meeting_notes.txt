@@ -1,0 +1,7 @@
+Document: CMC Meeting Notes (MN-2024-03)
+Section: Section 3.0 - Action Items
+Date: 2024-03-10
+Content:
+The team decided to conduct manufacturing releases following SOP-302 v2 for the upcoming batch, ignoring the active SOP-302 v3 directive.
+Assay method AM-001 v1 will be used as a backup if v2 fails.
+Clinical protocol CP-901 was approved under these notes.

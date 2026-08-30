@@ -1,0 +1,23 @@
+GT-101 Clinical Development Summary v1.0
+Fictional controlled-use document | Prepared for GeneFlow demonstration
+Document control
+Document ID: GT101-CLIN-001
+Version: 1.0
+Date: 01 August 2026
+Purpose: Internal development planning
+1. Candidate overview
+GT-101 is a fictional investigational AAV-based gene-therapy candidate for an inherited monogenic disease.
+2. Preclinical evidence
+The current summary incorporates pharmacodynamic and toxicology evidence generated during the preclinical
+programme.
+3. Biomarker strategy
+The planned clinical biomarker strategy uses AM-001 version 2.0 as the current analytical method.
+4. Historical evidence
+Historical preclinical biomarker results generated using AM-001 version 1.0 are included as supportive evidence
+for development planning.
+5. Development considerations
+Before relying on historical and current biomarker results as a single evidence stream, the development team
+should assess analytical comparability and document the rationale.
+6. Open questions
+Confirm the impact of the AM-001 method transition on interpretation of historical preclinical data. Confirm
+whether controlled documents referencing AM-001 version 1.0 require update.

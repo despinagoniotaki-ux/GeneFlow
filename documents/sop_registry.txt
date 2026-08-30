@@ -1,0 +1,19 @@
+Document: SOP Registry
+ID: REG-001
+Version: 2.4
+Date: 2024-02-01
+Author: Quality Assurance
+
+Section: Active SOPs
+Content:
+SOP-101 v4 – Data Management [ACTIVE]
+SOP-201 v2 – Cell Banking [ACTIVE]
+SOP-302 v3 – Sample Handling [ACTIVE]
+
+Section: Retired SOPs
+Content:
+SOP-302 v2 – Sample Handling [RETIRED 2023-11-01] – superseded by SOP-302 v3
+SOP-099 v1 – Legacy Archive [RETIRED 2020-01-01]
+
+Section: Change Control
+Content: All retirement decisions reviewed and approved by QA Director.

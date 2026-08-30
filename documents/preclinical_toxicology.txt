@@ -1,0 +1,17 @@
+Document: Preclinical Toxicology Report
+ID: TOX-PRE-003
+Version: 1.2
+Date: 2023-06-10
+Author: Dr. B. Nguyen
+
+Section: Study Design
+Content: GLP-compliant repeat-dose toxicology study in non-human primates (NHPs). Vector: scAAV-hFIX (self-complementary AAV).
+
+Section: NOAEL
+Content: The No-Observed-Adverse-Effect Level (NOAEL) was determined to be 5.0e12 vg/kg based on histopathology and liver enzyme data.
+
+Section: Safety Limit for FIH Translation
+Content: The maximum recommended starting dose (MRSD) for first-in-human (FIH) translation is 1.5e11 vg/kg, applying a 1/10 safety factor from NOAEL.
+
+Section: Vector Note
+Content: All preclinical studies conducted with scAAV-hFIX (self-complementary). The FIH product must confirm vector equivalence before clinical translation.

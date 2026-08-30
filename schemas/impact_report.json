@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ImpactReport",
+  "type": "object",
+  "required": ["report_id", "generated_at", "total_alerts", "critical_count", "high_count", "alerts"],
+  "properties": {
+    "report_id":      {"type": "string"},
+    "generated_at":   {"type": "string", "format": "date-time"},
+    "total_alerts":   {"type": "integer"},
+    "critical_count": {"type": "integer"},
+    "high_count":     {"type": "integer"},
+    "alerts":         {"type": "array", "items": {"$ref": "consistency_alert.json"}}
+  }
+}

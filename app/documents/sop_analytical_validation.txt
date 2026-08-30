@@ -1,0 +1,6 @@
+Document: SOP Analytical Validation Report (AVR-101)
+Section: Section 2.3 - Analytical Method Versions
+Date: 2024-01-20
+Content:
+Analytical method AM-001 v2 was validated as the active and approved version for potency testing. The old version AM-001 v1 is deprecated and no longer approved for clinical releases.
+SOP reference: Conducted under SOP-302 v3 guidelines.

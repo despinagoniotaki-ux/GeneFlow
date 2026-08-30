@@ -1,0 +1,24 @@
+GT-101 Preclinical Efficacy Study 014 — Final Report
+Fictional controlled-use document | Prepared for GeneFlow demonstration
+Document control
+Study ID: GT101-014
+Report version: 1.0
+Study completion: 28 May 2026
+1. Study objective
+The study evaluated preliminary pharmacodynamic activity, biodistribution and tolerability following
+administration of GT-101.
+2. Study population
+Forty animals were enrolled across four dose groups. Thirty-eight animals were included in the final efficacy
+analysis after protocol-defined exclusions and sample-quality review.
+3. Analytical procedures
+Biomarker samples were analysed using AM-001. The laboratory record identifies the method as AM-001
+version 1.0. Sample input volume was 10 µL.
+4. Results
+Dose-related increases in the primary biomarker were observed in the evaluable population. Biodistribution was
+detected in the target tissue in all active dose groups.
+5. Deviations
+Two animals were excluded from the primary efficacy analysis because of predefined analysis criteria. No
+amendment to the study protocol was issued.
+6. Conclusion
+The study provides preliminary evidence of pharmacodynamic activity and supports continued evaluation of
+GT-101. Interpretation of historical analytical results should take account of the method version used.
